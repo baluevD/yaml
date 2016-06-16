@@ -25,6 +25,6 @@ resources:
         echo "git clone https://github.com/baluevD/Puppet.git" >> /tmp/log
         git clone https://github.com/baluevD/Puppet.git
         echo "puppet apply Puppet/puppet.pp" >> /tmp/log
-        sudo puppet apply Puppet/puppet.pp
+        sudo puppet apply Puppet/puppet.pp 
         echo "git clone https://github.com/baluevD/actors.git" >> /tmp/log
         git clone https://github.com/baluevD/actors.git
