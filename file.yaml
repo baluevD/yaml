@@ -6,7 +6,7 @@ resources:
   my_instance:
     type: OS::Nova::Server
     properties:
-      key_name: dimBaluev #меняю на свой
+      key_name: dimBaluev
       image: ubuntu-trusty
       flavor: m1.small
       networks:
