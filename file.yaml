@@ -16,15 +16,16 @@ resources:
         sudo chsh -s /bin/bash ec2-user
         cd /home/ec2-user
         sudo apt-get update
-        echo "install puppet git" >> /tmp/log
+        echo "apt-get install -y puppet git" >> /tmp/log
         sudo apt-get install -y puppet git
-        echo "puppet module install aco-oracle_java" >> /tmp/log
-        sudo puppet module install aco-oracle_java
+        #!echo "puppet module install aco-oracle_java" >> /tmp/log
+        #!sudo puppet module install aco-oracle_java
+        puppet module install spantree-java8
         echo "puppet module install garethr-scala" >> /tmp/log
         sudo puppet module install garethr-scala
-        echo "git clone https://github.com/baluevD/Puppet.git" >> /tmp/log
-        git clone https://github.com/baluevD/Puppet.git
-        echo "puppet apply Puppet/puppet.pp" >> /tmp/log
-        sudo puppet apply Puppet/puppet.pp 
+        echo "git clone https://github.com/baluevD/puppet.git" >> /tmp/log
+        git clone https://github.com/baluevD/puppet.git
+        echo "puppet apply puppet/puppet.pp" >> /tmp/log
+        sudo puppet apply uppet/puppet.pp
         echo "git clone https://github.com/baluevD/actors.git" >> /tmp/log
         git clone https://github.com/baluevD/actors.git
